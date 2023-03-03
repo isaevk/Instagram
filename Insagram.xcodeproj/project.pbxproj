@@ -18,6 +18,12 @@
 		18CEDE2229AC946500460BE2 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE2129AC946500460BE2 /* AddPostViewController.swift */; };
 		18CEDE2529AC94CD00460BE2 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE2429AC94CD00460BE2 /* LikesViewController.swift */; };
 		18CEDE2829AC94F900460BE2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE2729AC94F900460BE2 /* ProfileViewController.swift */; };
+		18E3EDCB29AE4B6400D1C44F /* Sourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDCA29AE4B6400D1C44F /* Sourse.swift */; };
+		18E3EDCD29AF17D200D1C44F /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDCC29AF17D200D1C44F /* FeedTableViewCell.swift */; };
+		18E3EDD329B063B000D1C44F /* InstaAvatarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDD229B063B000D1C44F /* InstaAvatarButton.swift */; };
+		18E3EDD529B0A02900D1C44F /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDD429B0A02900D1C44F /* UIImage+.swift */; };
+		18E3EDD729B2036600D1C44F /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDD629B2036600D1C44F /* StoriesTableViewCell.swift */; };
+		18E3EDD929B2070B00D1C44F /* RecommendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDD829B2070B00D1C44F /* RecommendationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		18CEDE2129AC946500460BE2 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		18CEDE2429AC94CD00460BE2 /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 		18CEDE2729AC94F900460BE2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18E3EDCA29AE4B6400D1C44F /* Sourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sourse.swift; sourceTree = "<group>"; };
+		18E3EDCC29AF17D200D1C44F /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		18E3EDD229B063B000D1C44F /* InstaAvatarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaAvatarButton.swift; sourceTree = "<group>"; };
+		18E3EDD429B0A02900D1C44F /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		18E3EDD629B2036600D1C44F /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
+		18E3EDD829B2070B00D1C44F /* RecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				18CEDE1A29AC90FC00460BE2 /* Application */,
+				18E3EDC929AE4B2900D1C44F /* Source */,
 				18CEDE1629AC8FB600460BE2 /* Controllers */,
 				18CEDE1B29AC91C700460BE2 /* Resources */,
 				18CEDE2929AC950B00460BE2 /* Helper */,
@@ -158,8 +171,21 @@
 		18CEDE2929AC950B00460BE2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				18E3EDCC29AF17D200D1C44F /* FeedTableViewCell.swift */,
+				18E3EDD629B2036600D1C44F /* StoriesTableViewCell.swift */,
+				18E3EDD229B063B000D1C44F /* InstaAvatarButton.swift */,
+				18E3EDD429B0A02900D1C44F /* UIImage+.swift */,
+				18E3EDD829B2070B00D1C44F /* RecommendationTableViewCell.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		18E3EDC929AE4B2900D1C44F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EDCA29AE4B6400D1C44F /* Sourse.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,14 +259,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18E3EDD329B063B000D1C44F /* InstaAvatarButton.swift in Sources */,
+				18E3EDCB29AE4B6400D1C44F /* Sourse.swift in Sources */,
 				18CEDE2529AC94CD00460BE2 /* LikesViewController.swift in Sources */,
 				18CEDE1F29AC93DB00460BE2 /* SearchViewController.swift in Sources */,
 				18CEDE0629AC746700460BE2 /* MainTabBarController.swift in Sources */,
 				18CEDE0229AC746700460BE2 /* AppDelegate.swift in Sources */,
 				18CEDE0429AC746700460BE2 /* SceneDelegate.swift in Sources */,
 				18CEDE2229AC946500460BE2 /* AddPostViewController.swift in Sources */,
+				18E3EDD529B0A02900D1C44F /* UIImage+.swift in Sources */,
 				18CEDE2829AC94F900460BE2 /* ProfileViewController.swift in Sources */,
+				18E3EDCD29AF17D200D1C44F /* FeedTableViewCell.swift in Sources */,
 				18CEDE1929AC903900460BE2 /* HomeViewController.swift in Sources */,
+				18E3EDD929B2070B00D1C44F /* RecommendationTableViewCell.swift in Sources */,
+				18E3EDD729B2036600D1C44F /* StoriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
