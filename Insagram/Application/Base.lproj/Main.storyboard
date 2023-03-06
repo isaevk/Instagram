@@ -16,11 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lfG-gs-OXb">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lfG-gs-OXb">
+                                <rect key="frame" x="0.0" y="102" width="393" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="S0o-qd-gK3"/>
+                                    <constraint firstAttribute="width" constant="393" id="ZEf-3b-6Fk"/>
+                                </constraints>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -28,6 +31,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yUF-QZ-uIT"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yUF-QZ-uIT" firstAttribute="trailing" secondItem="lfG-gs-OXb" secondAttribute="trailing" id="6pv-9r-kZg"/>
+                            <constraint firstItem="lfG-gs-OXb" firstAttribute="bottom" secondItem="yUF-QZ-uIT" secondAttribute="bottom" id="V8D-md-R5D"/>
+                            <constraint firstItem="lfG-gs-OXb" firstAttribute="top" secondItem="ckN-OU-ooL" secondAttribute="top" constant="102" id="e6r-tg-gYy"/>
+                            <constraint firstItem="lfG-gs-OXb" firstAttribute="leading" secondItem="ckN-OU-ooL" secondAttribute="leading" id="mft-P3-VdT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="oRx-fT-QnJ">
                         <barButtonItem key="leftBarButtonItem" image="logo_insta" id="lHY-hm-YkZ"/>

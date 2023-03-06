@@ -14,7 +14,6 @@ final class HomeViewController: UIViewController {
   
   private var posts = Source.makePost()
   
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     setTable()
@@ -82,7 +81,7 @@ extension HomeViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     switch indexPath.section {
-    case 0: return 80
+    case 0: return 90
     case 1: return 600
     case 2: return 300
     default: return UITableView.automaticDimension
