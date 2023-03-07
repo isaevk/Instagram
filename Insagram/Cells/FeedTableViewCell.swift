@@ -9,6 +9,7 @@ import UIKit
 
 final class FeedTableViewCell: UITableViewCell {
 
+  // MARK: - Private Properties
   private let avatarTopImageView = UIImageView()
   private let postPhotoImageView = UIImageView()
   private let likesButton = UIButton()
@@ -71,7 +72,7 @@ final class FeedTableViewCell: UITableViewCell {
     return timeLabel
   }()
 
-  // MARK: - Override init
+  // MARK: - Override Initializers
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setUI()
@@ -198,9 +199,6 @@ final class FeedTableViewCell: UITableViewCell {
                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightText])
   }
   
-  
-  
-  
   // MARK: - Configure Post
   func configure(post: Post) {
     avatarTopImageView.image = post.avatarImage.withRoundedCorners()
@@ -210,9 +208,5 @@ final class FeedTableViewCell: UITableViewCell {
     nicknameBottomLabel.text = post.nickname
     signedLabel.text = post.signed
     avatarBottomImageView.image = post.avatarImage.withRoundedCorners()
-    
-
   }
-  
-  
 }

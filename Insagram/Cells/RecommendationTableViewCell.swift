@@ -7,47 +7,58 @@
 
 import UIKit
 
-class RecommendationTableViewCell: UITableViewCell {
+final class RecommendationTableViewCell: UITableViewCell {
   
-  private let recomendationLabel = UILabel()
+  // MARK: - Private Properties
+  private var posts = Source.makePost()
   
-  private let recomendationOneView = UIView()
-  private let recomendationTwoView = UIView()
-  private let recomendationThreeView = UIView()
+  private let recomendationOneView = RecommendationView()
+  private let recomendationTwoView = RecommendationView()
+  private let recomendationThreeView = RecommendationView()
   
-  private lazy var scrollView: UIScrollView = {
-    let sv = UIScrollView()
-    sv.showsVerticalScrollIndicator = false
-    sv.showsHorizontalScrollIndicator = false
-    sv.backgroundColor = .separator
-    sv.contentSize =  contentSize
-    sv.frame = CGRect(x: 0, y: 20, width: 600, height: 260)
-    sv.contentSize =  contentSize
-    return sv
+  private let recomendationLabel: UILabel = {
+    let label = UILabel()
+    label.font = .boldSystemFont(ofSize: 16)
+    label.text = "Recommended for you"
+    label.textColor = .white
+    return label
   }()
   
   private let stackView: UIStackView = {
     let stackView = UIStackView()
     stackView.axis = .horizontal
     stackView.alignment = .center
+    stackView.backgroundColor = .separator
+    stackView.layer.cornerRadius = 30
     stackView.spacing = 10
     return stackView
   }()
   
+  private var contentSize: CGSize {
+    CGSize(width: contentView.bounds.width + 500, height: 260)
+   }
+  
+  // MARK: - Lazy Properties
+  private lazy var scrollView: UIScrollView = {
+    let sv = UIScrollView()
+    sv.showsVerticalScrollIndicator = false
+    sv.showsHorizontalScrollIndicator = false
+    sv.backgroundColor = .separator
+    sv.contentSize =  contentSize
+    sv.frame = CGRect(x: 0, y: 20, width: 580, height: 280)
+    return sv
+  }()
+  
   private  lazy var contentUIView: UIView = {
     let cv = UIView()
-    cv.backgroundColor = .green
-    cv.frame = CGRect(x: 0, y: 30, width: 700, height: 250)
+    cv.backgroundColor = .tintColor
+    cv.frame = CGRect(x: 0, y: 30, width: 680, height: 250)
     return cv
   }()
   
-  private var contentSize: CGSize {
-    CGSize(width: contentView.bounds.width + 800, height: 260)
-   }
-
+  // MARK: - Override Initializers
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
-    backgroundColor = .black
     setUI()
     setConstraints()
   }
@@ -57,14 +68,13 @@ class RecommendationTableViewCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
 
-  
-  
+  // MARK: - Setup Constraints
   private func setConstraints() {
-    [recomendationLabel].forEach {
-      contentView.addSubview($0)
+    [recomendationLabel, stackView].forEach {
       $0.translatesAutoresizingMaskIntoConstraints = false
     }
-    stackView.translatesAutoresizingMaskIntoConstraints = false
+    
+    contentView.addSubview(recomendationLabel)
     
     NSLayoutConstraint.activate([
       recomendationLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
@@ -76,7 +86,8 @@ class RecommendationTableViewCell: UITableViewCell {
     }
     
     for view in stackView.arrangedSubviews {
-      view.backgroundColor = .red
+      view.backgroundColor = .black
+      view.layer.cornerRadius = 30.0
       NSLayoutConstraint.activate([
         view.widthAnchor.constraint(equalToConstant: 220),
         view.heightAnchor.constraint(equalToConstant: 250)
@@ -91,14 +102,17 @@ class RecommendationTableViewCell: UITableViewCell {
     ])
   }
   
+  // MARK: - Setup UI
   private func setUI() {
-    recomendationLabel.font = .boldSystemFont(ofSize: 16)
-    recomendationLabel.text = "Recommended for you"
-    recomendationLabel.textColor = .white
-    
+    selectionStyle = .none
+    backgroundColor = .separator
+
     contentView.addSubview(scrollView)
     scrollView.addSubview(contentUIView)
     contentUIView.addSubview(stackView)
     
+    recomendationOneView.configure(post: posts[0])
+    recomendationTwoView.configure(post: posts[1])
+    recomendationThreeView.configure(post: posts[2])
   }
 }

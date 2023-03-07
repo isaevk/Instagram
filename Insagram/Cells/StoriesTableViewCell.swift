@@ -9,21 +9,12 @@ import UIKit
 
 final class StoriesTableViewCell: UITableViewCell {
 
+  // MARK: - Private Properties
+  private let stories = Source.makePost()
+  
   private let storyButton = UIButton()
   private let storyButton2 = UIButton()
   private let storyButton3 = UIButton()
-  
-  private let stories = Source.makePost()
-  
-  private lazy var scrollView: UIScrollView = {
-    let sv = UIScrollView()
-    sv.showsVerticalScrollIndicator = false
-    sv.showsHorizontalScrollIndicator = false
-    sv.backgroundColor = .black
-    sv.contentSize =  contentSize
-    sv.frame = CGRect(x: 0, y: 0, width: 600, height: 90)
-    return sv
-  }()
   
   private let stackView: UIStackView = {
     let stackView = UIStackView()
@@ -33,6 +24,11 @@ final class StoriesTableViewCell: UITableViewCell {
     return stackView
   }()
   
+  private var contentSize: CGSize {
+    CGSize(width: contentView.bounds.width + 300, height: 90)
+   }
+  
+  // MARK: - Lazy Properties
   private  lazy var contentUIView: UIView = {
     let cv = UIView()
     cv.backgroundColor = .black
@@ -40,10 +36,17 @@ final class StoriesTableViewCell: UITableViewCell {
     return cv
   }()
   
-  private var contentSize: CGSize {
-    CGSize(width: contentView.bounds.width + 400, height: 90)
-   }
+  private lazy var scrollView: UIScrollView = {
+    let sv = UIScrollView()
+    sv.showsVerticalScrollIndicator = false
+    sv.showsHorizontalScrollIndicator = false
+    sv.backgroundColor = .black
+    sv.frame = CGRect(x: 0, y: 0, width: 600, height: 90)
+    sv.contentSize =  contentSize
+    return sv
+  }()
   
+  // MARK: - Override Initializers
   override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setUI()
@@ -55,8 +58,7 @@ final class StoriesTableViewCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
-  
-  // MARK: Setup Constraints
+  // MARK: - Setup Constraints
   private func setConstraints() {
     [stackView].forEach {
       $0.translatesAutoresizingMaskIntoConstraints = false

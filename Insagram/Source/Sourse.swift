@@ -39,14 +39,22 @@ struct Signatures {
   static let post3 = "Сегодня все отменяется"
 }
 
-// Убрать анрапы!!!
-
 struct Source {
+  
   static func makePost() -> [Post] {
-    [
-      .init(nickname: NickNames.user1, avatarImage: .init(named: AvatarImage.avatar1)!, postImage: .init(named: PostImage.image1)!, likes: "10", signed: Signatures.post1),
-      .init(nickname: NickNames.user2, avatarImage: .init(named: AvatarImage.avatar2)!, postImage: .init(named: PostImage.image2)!, likes: "39", signed: Signatures.post2),
-      .init(nickname: NickNames.user3, avatarImage: .init(named: AvatarImage.avatar3)!, postImage: .init(named: PostImage.image3)!, likes: "83", signed: Signatures.post3)
+    
+    guard let avatar1 = UIImage(named: AvatarImage.avatar1),
+          let avatar2 = UIImage(named: AvatarImage.avatar2),
+          let avatar3 = UIImage(named: AvatarImage.avatar3),
+          let postImage1 = UIImage(named: PostImage.image1),
+          let postImage2 = UIImage(named: PostImage.image2),
+          let postImage3 = UIImage(named: PostImage.image3)
+    else { fatalError() }
+    
+    return [
+      Post(nickname: NickNames.user1, avatarImage: avatar1, postImage: postImage1, likes: "10", signed: Signatures.post1),
+      Post(nickname: NickNames.user2, avatarImage: avatar2, postImage: postImage2, likes: "39", signed: Signatures.post2),
+      Post(nickname: NickNames.user3, avatarImage: avatar3, postImage: postImage3, likes: "83", signed: Signatures.post3)
     ]
   }
 }

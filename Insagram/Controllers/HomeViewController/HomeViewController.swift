@@ -9,21 +9,24 @@ import UIKit
 
 final class HomeViewController: UIViewController {
 
-
+  // MARK: - Private Properties
   @IBOutlet private weak var feedTableView: UITableView!
   
   private var posts = Source.makePost()
   
+  // MARK: Override func
   override func viewDidLoad() {
     super.viewDidLoad()
     setTable()
     setRefreshForTable()
   }
   
+// MARK: - IBAction
   @objc private func refresh() {
     feedTableView.refreshControl?.endRefreshing()
   }
   
+  // MARK: - Private Methods
   private func setTable() {
     feedTableView.delegate = self
     feedTableView.dataSource = self
@@ -83,7 +86,7 @@ extension HomeViewController: UITableViewDataSource {
     switch indexPath.section {
     case 0: return 90
     case 1: return 600
-    case 2: return 300
+    case 2: return 320
     default: return UITableView.automaticDimension
     }
   }
