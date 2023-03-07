@@ -9,21 +9,45 @@
 /* Begin PBXBuildFile section */
 		18CEDE0229AC746700460BE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE0129AC746700460BE2 /* AppDelegate.swift */; };
 		18CEDE0429AC746700460BE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE0329AC746700460BE2 /* SceneDelegate.swift */; };
-		18CEDE0629AC746700460BE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE0529AC746700460BE2 /* ViewController.swift */; };
+		18CEDE0629AC746700460BE2 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE0529AC746700460BE2 /* MainTabBarController.swift */; };
 		18CEDE0929AC746700460BE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CEDE0729AC746700460BE2 /* Main.storyboard */; };
 		18CEDE0B29AC746900460BE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CEDE0A29AC746900460BE2 /* Assets.xcassets */; };
 		18CEDE0E29AC746900460BE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CEDE0C29AC746900460BE2 /* LaunchScreen.storyboard */; };
+		18CEDE1929AC903900460BE2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE1829AC903900460BE2 /* HomeViewController.swift */; };
+		18CEDE1F29AC93DB00460BE2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE1E29AC93DB00460BE2 /* SearchViewController.swift */; };
+		18CEDE2229AC946500460BE2 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE2129AC946500460BE2 /* AddPostViewController.swift */; };
+		18CEDE2529AC94CD00460BE2 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE2429AC94CD00460BE2 /* LikesViewController.swift */; };
+		18CEDE2829AC94F900460BE2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEDE2729AC94F900460BE2 /* ProfileViewController.swift */; };
+		18E3EDCB29AE4B6400D1C44F /* Sourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDCA29AE4B6400D1C44F /* Sourse.swift */; };
+		18E3EDCD29AF17D200D1C44F /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDCC29AF17D200D1C44F /* FeedTableViewCell.swift */; };
+		18E3EDD329B063B000D1C44F /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDD229B063B000D1C44F /* UIButton+.swift */; };
+		18E3EDD529B0A02900D1C44F /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDD429B0A02900D1C44F /* UIImage+.swift */; };
+		18E3EDD729B2036600D1C44F /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDD629B2036600D1C44F /* StoriesTableViewCell.swift */; };
+		18E3EDD929B2070B00D1C44F /* RecommendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDD829B2070B00D1C44F /* RecommendationTableViewCell.swift */; };
+		18E3EDDC29B605B100D1C44F /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3EDDB29B605B100D1C44F /* RecommendationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18CEDDFE29AC746700460BE2 /* Insagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CEDE0129AC746700460BE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CEDE0329AC746700460BE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		18CEDE0529AC746700460BE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18CEDE0529AC746700460BE2 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		18CEDE0829AC746700460BE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18CEDE0A29AC746900460BE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CEDE0D29AC746900460BE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CEDE0F29AC746900460BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CEDE1829AC903900460BE2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		18CEDE1E29AC93DB00460BE2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		18CEDE2129AC946500460BE2 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
+		18CEDE2429AC94CD00460BE2 /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		18CEDE2729AC94F900460BE2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		18E3EDCA29AE4B6400D1C44F /* Sourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sourse.swift; sourceTree = "<group>"; };
+		18E3EDCC29AF17D200D1C44F /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		18E3EDD229B063B000D1C44F /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		18E3EDD429B0A02900D1C44F /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		18E3EDD629B2036600D1C44F /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
+		18E3EDD829B2070B00D1C44F /* RecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTableViewCell.swift; sourceTree = "<group>"; };
+		18E3EDDB29B605B100D1C44F /* RecommendationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,123 @@
 		18CEDE0029AC746700460BE2 /* Insagram */ = {
 			isa = PBXGroup;
 			children = (
+				18CEDE1A29AC90FC00460BE2 /* Application */,
+				18E3EDC929AE4B2900D1C44F /* Source */,
+				18CEDE1629AC8FB600460BE2 /* Controllers */,
+				18E3EDDA29B6054B00D1C44F /* Cells */,
+				18CEDE1B29AC91C700460BE2 /* Resources */,
+				18CEDE2929AC950B00460BE2 /* Helper */,
+			);
+			path = Insagram;
+			sourceTree = "<group>";
+		};
+		18CEDE1529AC8E8300460BE2 /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				18CEDE0529AC746700460BE2 /* MainTabBarController.swift */,
+			);
+			path = MainTabBarController;
+			sourceTree = "<group>";
+		};
+		18CEDE1629AC8FB600460BE2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				18CEDE1529AC8E8300460BE2 /* MainTabBarController */,
+				18CEDE1729AC900E00460BE2 /* HomeViewController */,
+				18CEDE1D29AC93BC00460BE2 /* SearchViewController */,
+				18CEDE2029AC943600460BE2 /* AddPostViewController */,
+				18CEDE2329AC94AB00460BE2 /* LikesViewController */,
+				18CEDE2629AC94D400460BE2 /* ProfileViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18CEDE1729AC900E00460BE2 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18CEDE1829AC903900460BE2 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		18CEDE1A29AC90FC00460BE2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				18CEDE0129AC746700460BE2 /* AppDelegate.swift */,
 				18CEDE0329AC746700460BE2 /* SceneDelegate.swift */,
-				18CEDE0529AC746700460BE2 /* ViewController.swift */,
 				18CEDE0729AC746700460BE2 /* Main.storyboard */,
-				18CEDE0A29AC746900460BE2 /* Assets.xcassets */,
 				18CEDE0C29AC746900460BE2 /* LaunchScreen.storyboard */,
 				18CEDE0F29AC746900460BE2 /* Info.plist */,
 			);
-			path = Insagram;
+			path = Application;
+			sourceTree = "<group>";
+		};
+		18CEDE1B29AC91C700460BE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18CEDE0A29AC746900460BE2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18CEDE1D29AC93BC00460BE2 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18CEDE1E29AC93DB00460BE2 /* SearchViewController.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		18CEDE2029AC943600460BE2 /* AddPostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18CEDE2129AC946500460BE2 /* AddPostViewController.swift */,
+			);
+			path = AddPostViewController;
+			sourceTree = "<group>";
+		};
+		18CEDE2329AC94AB00460BE2 /* LikesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18CEDE2429AC94CD00460BE2 /* LikesViewController.swift */,
+			);
+			path = LikesViewController;
+			sourceTree = "<group>";
+		};
+		18CEDE2629AC94D400460BE2 /* ProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18CEDE2729AC94F900460BE2 /* ProfileViewController.swift */,
+			);
+			path = ProfileViewController;
+			sourceTree = "<group>";
+		};
+		18CEDE2929AC950B00460BE2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EDD229B063B000D1C44F /* UIButton+.swift */,
+				18E3EDD429B0A02900D1C44F /* UIImage+.swift */,
+				18E3EDDB29B605B100D1C44F /* RecommendationView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		18E3EDC929AE4B2900D1C44F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EDCA29AE4B6400D1C44F /* Sourse.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		18E3EDDA29B6054B00D1C44F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				18E3EDCC29AF17D200D1C44F /* FeedTableViewCell.swift */,
+				18E3EDD629B2036600D1C44F /* StoriesTableViewCell.swift */,
+				18E3EDD829B2070B00D1C44F /* RecommendationTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +270,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CEDE0629AC746700460BE2 /* ViewController.swift in Sources */,
+				18E3EDD329B063B000D1C44F /* UIButton+.swift in Sources */,
+				18E3EDCB29AE4B6400D1C44F /* Sourse.swift in Sources */,
+				18E3EDDC29B605B100D1C44F /* RecommendationView.swift in Sources */,
+				18CEDE2529AC94CD00460BE2 /* LikesViewController.swift in Sources */,
+				18CEDE1F29AC93DB00460BE2 /* SearchViewController.swift in Sources */,
+				18CEDE0629AC746700460BE2 /* MainTabBarController.swift in Sources */,
 				18CEDE0229AC746700460BE2 /* AppDelegate.swift in Sources */,
 				18CEDE0429AC746700460BE2 /* SceneDelegate.swift in Sources */,
+				18CEDE2229AC946500460BE2 /* AddPostViewController.swift in Sources */,
+				18E3EDD529B0A02900D1C44F /* UIImage+.swift in Sources */,
+				18CEDE2829AC94F900460BE2 /* ProfileViewController.swift in Sources */,
+				18E3EDCD29AF17D200D1C44F /* FeedTableViewCell.swift in Sources */,
+				18CEDE1929AC903900460BE2 /* HomeViewController.swift in Sources */,
+				18E3EDD929B2070B00D1C44F /* RecommendationTableViewCell.swift in Sources */,
+				18E3EDD729B2036600D1C44F /* StoriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,10 +433,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R5H4JGLB35;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Insagram/Info.plist;
+				INFOPLIST_FILE = Insagram/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +463,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R5H4JGLB35;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Insagram/Info.plist;
+				INFOPLIST_FILE = Insagram/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
